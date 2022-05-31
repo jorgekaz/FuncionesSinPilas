@@ -28,13 +28,13 @@ int main()
         system("cls");
         switch(opt){
         case 1:{
-                printf(" 1.Desarrollar una función que devuelva un valor RANDOM en el rango de 0 a 100.\n\n");
+                printf(" 1.Desarrollar una funciÃ³n que devuelva un valor RANDOM en el rango de 0 a 100.\n\n");
                 printf(" EL NUMERO RANDOM ENTRE 0 y 100 ES: %i\n\n", numeroRandom());
                 system("pause");
                 system("cls");
             }break;
         case 2:{
-                printf(" 2.Diseñe una función que reciba 3 números enteros y muestre el mayor y el menor.\n\n");
+                printf(" 2.DiseÃ±e una funciÃ³n que reciba 3 nÃºmeros enteros y muestre el mayor y el menor.\n\n");
                 int uno;
                 int dos;
                 int tres;
@@ -49,7 +49,7 @@ int main()
                 system("cls");
             }break;
         case 3:{
-                printf(" 3.Diseñe una función que reciba un número entero N y realice la suma de los números\n   enteros positivos menores que N y lo retorne. N es un  dato ingresado por el usuario en el main.\n\n");
+                printf(" 3.DiseÃ±e una funciÃ³n que reciba un nÃºmero entero N y realice la suma de los nÃºmeros\n   enteros positivos menores que N y lo retorne. N es un  dato ingresado por el usuario en el main.\n\n");
                 int numN;
                 printf(" INGRESA UN NUMERO: ");
                 scanf("%i", &numN);
@@ -59,7 +59,7 @@ int main()
                 system("cls");
             }break;
         case 4:{
-                printf(" 4.Desarrollar una función que muestre la tabla de multiplicar de un número entero\n   recibido por parámetro.\n\n");
+                printf(" 4.Desarrollar una funciÃ³n que muestre la tabla de multiplicar de un nÃºmero entero\n   recibido por parÃ¡metro.\n\n");
                 int numero;
                 printf(" INGRESE UN NUMERO: ");
                 scanf("%i", &numero);
@@ -68,13 +68,13 @@ int main()
                 system("cls");
             }break;
         case 5:{
-                printf(" 5.Realice una pequeña calculadora, utilizando funciones (una función de suma, una\n   de multiplicación, una de resta, una de división…)\n\n");
+                printf(" 5.Realice una pequeÃ±a calculadora, utilizando funciones (una funciÃ³n de suma, una\n   de multiplicaciÃ³n, una de resta, una de divisiÃ³nâ€¦)\n\n");
                 calculadora();
                 system("pause");
                 system("cls");
             }break;
         case 6:{
-                printf(" 6.Realizar una función que reciba un número positivo entero por parámetro por referencia,\n   y cambie su signo a negativo.\n\n");
+                printf(" 6.Realizar una funciÃ³n que reciba un nÃºmero positivo entero por parÃ¡metro por referencia,\n   y cambie su signo a negativo.\n\n");
                 int numNegativo;
                 printf(" INGRESE UN NUMERO ");
                 fflush(stdin);
@@ -85,7 +85,7 @@ int main()
                 system("cls");
             }break;
         case 7:{
-                printf(" 7.Realizar una función que reciba dos números enteros por parámetro por referencia y\n   cargue sus valores el usuario dentro de la función.\n\n");
+                printf(" 7.Realizar una funciÃ³n que reciba dos nÃºmeros enteros por parÃ¡metro por referencia y\n   cargue sus valores el usuario dentro de la funciÃ³n.\n\n");
                 int numberA;
                 int numberB;
                 cargarValores(&numberA, &numberB);
@@ -118,7 +118,7 @@ int numeroRandom(){
     return rand()%(100+1);
 }
 
-/// 2. Diseñe una funcion que reciba 3 numeros enteros y muestre el mayor y el menor.
+/// 2. DiseÃ±e una funcion que reciba 3 numeros enteros y muestre el mayor y el menor.
 int mostrarNumeros(int numeroUno, int numeroDos, int numeroTres){
     if(numeroUno<=numeroDos && numeroUno<=numeroTres){
         printf("\n EL NUMERO MENOR ES: %i\n\n", numeroUno);
@@ -137,7 +137,7 @@ int mostrarNumeros(int numeroUno, int numeroDos, int numeroTres){
     }
 }
 
-/// 3. Diseñe una funcion que reciba un numero entero N y realice la suma de los numeros
+/// 3. DiseÃ±e una funcion que reciba un numero entero N y realice la suma de los numeros
 /// enteros positivos menores que N y lo retorne. N es un dato ingresado por el usario en el main.
 int sumaDeN(int numeroN){
     int suma=0;
@@ -160,7 +160,7 @@ void tablaMultiplicar(int tablaNumero){
     }
 }
 
-/// 5. Realice una pequeña calculadora, utilizando funciones (una funcion de suma, una de multiplicacion,
+/// 5. Realice una pequeÃ±a calculadora, utilizando funciones (una funcion de suma, una de multiplicacion,
 /// una de resta, una de division...)
 void calculadora(){
     float numA;
@@ -209,7 +209,8 @@ void calculadora(){
             scanf("%f", &numB);
             restar(numA, numB);
             system("pause");
-            system("cls");        }break;
+            system("cls");
+        }break;
         case 4:{
             printf(" DIVISION\n");
             printf(" INGRESE UN NUMERO: ");
@@ -277,71 +278,18 @@ void cargarValores(int* numeroA, int* numeroB){
 int menu(){
     int opt;
     printf("\n================================================\n");
-    printf(" TRABAJO PRACTICO N° 3 bis: FUNCIONES SIN PILAS\n");
+    printf(" TRABAJO PRACTICO NÂ° 3 bis: FUNCIONES SIN PILAS\n");
     printf("================================================\n\n");
-    printf(" 1.Desarrollar una función que devuelva un valor RANDOM en el rango de 0 a 100.\n\n");
-    printf(" 2.Diseñe una función que reciba 3 números enteros y muestre el mayor y el menor.\n\n");
-    printf(" 3.Diseñe una función que reciba un número entero N y realice la suma de los números\n   enteros positivos menores que N y lo retorne. N es un  dato ingresado por el usuario en el main.\n\n");
-    printf(" 4.Desarrollar una función que muestre la tabla de multiplicar de un número entero\n   recibido por parámetro.\n\n");
-    printf(" 5.Realice una pequeña calculadora, utilizando funciones (una función de suma, una\n   de multiplicación, una de resta, una de división…)\n\n");
-    printf(" 6.Realizar una función que reciba un número positivo entero por parámetro por referencia,\n   y cambie su signo a negativo.\n\n");
-    printf(" 7.Realizar una función que reciba dos números enteros por parámetro por referencia y\n   cargue sus valores el usuario dentro de la función.\n\n");
+    printf(" 1.Desarrollar una funciÃ³n que devuelva un valor RANDOM en el rango de 0 a 100.\n\n");
+    printf(" 2.DiseÃ±e una funciÃ³n que reciba 3 nÃºmeros enteros y muestre el mayor y el menor.\n\n");
+    printf(" 3.DiseÃ±e una funciÃ³n que reciba un nÃºmero entero N y realice la suma de los nÃºmeros\n   enteros positivos menores que N y lo retorne. N es un  dato ingresado por el usuario en el main.\n\n");
+    printf(" 4.Desarrollar una funciÃ³n que muestre la tabla de multiplicar de un nÃºmero entero\n   recibido por parÃ¡metro.\n\n");
+    printf(" 5.Realice una pequeÃ±a calculadora, utilizando funciones (una funciÃ³n de suma, una\n   de multiplicaciÃ³n, una de resta, una de divisiÃ³nâ€¦)\n\n");
+    printf(" 6.Realizar una funciÃ³n que reciba un nÃºmero positivo entero por parÃ¡metro por referencia,\n   y cambie su signo a negativo.\n\n");
+    printf(" 7.Realizar una funciÃ³n que reciba dos nÃºmeros enteros por parÃ¡metro por referencia y\n   cargue sus valores el usuario dentro de la funciÃ³n.\n\n");
     printf(" 8.SALIR\n\n");
-    printf("\n ELIJA UNA OPCIÓN: ");
+    printf("\n ELIJA UNA OPCIÃ“N: ");
     fflush(stdin);
     scanf("%i", &opt);
     return opt;
 }
-
-
-//    /// 1
-//    printf("EL NUMERO RANDOM ENTRE 0 y 100 ES: %i\n", numeroRandom());
-//    /// 2
-//    int uno;
-//    int dos;
-//    int tres;
-//    printf("INGRESE UN NUMERO: ", uno);
-//    scanf("%i", &uno);
-//    printf("INGRESE UN NUMERO: ", dos);
-//    scanf("%i", &dos);
-//    printf("INGRESE UN NUMERO: ", tres);
-//    scanf("%i", &tres);
-//    mostrarNumeros(uno,dos,tres);
-//    /// 3
-//    int numN;
-//    printf("INGRESA UN NUMERO: ", numN);
-//    scanf("%i", &numN);
-//
-//    printf("\nEL NUMERO INGRESADO MAS LA SUMA DE LOS MENORES POSITIVOS ES DE: %i\n", sumaDeN(numN));
-//    /// 4
-//    int numero;
-//    printf("INGRESE UN NUMERO: ");
-//    scanf("%i", &numero);
-//    tablaMultiplicar(numero);
-//    /// 5
-//    float numA;
-//    float numB;
-//
-//    printf("INGRESE UN NUMERO: ");
-//    scanf("%f", &numA);
-//    printf("INGRESE UN NUMERO: ");
-//    scanf("%f", &numB);
-//
-//    printf("\nLA SUMA DE SUS NUMEROS DA: %.2f\n", sumar(numA, numB));
-//    printf("\nLA MULTIPLICACION DE SUS NUMEROS DA: %.2f\n", multiplicar(numA, numB));
-//    printf("\nLA RESTA DE SUS NUMEROS DA: %.2f\n", restar(numA, numB));
-//    printf("\nLA DIVISION DE SUS NUMEROS DA: %.2f\n", dividir(numA, numB));
-//    /// 6
-//    int numNegativo;
-//    printf("INGRESE UN NUMERO ");
-//    fflush(stdin);
-//    scanf("%i", &numNegativo);
-//    pasarNegativo(&numNegativo);
-//    printf("\nEL NUMERO EN NEGATIVO ES: %i\n", numNegativo);
-//    /// 7
-//    int numberA;
-//    int numberB;
-//    cargarValores(&numberA, &numberB);
-//    printf("\nEL VALOR DE A ES: %i\n", numberA);
-//    printf("EL VALOR DE B ES: %i\n", numberB);
-//}
