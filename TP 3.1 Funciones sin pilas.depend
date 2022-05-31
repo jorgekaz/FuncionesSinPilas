@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1651362657 source:d:\tecnicatura en programacion\1er cuatrimestre\programacion y laboratorio 1\proyectos\funciones sin pilas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<wchar.h>
+	<locale.h>
+	<windows.h>
+
+1654019591 source:d:\tecnicatura en programacion\1er cuatrimestre\programacion y laboratorio 1\proyectos\tp 3.1 funciones sin pilas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<wchar.h>
+	<locale.h>
+	<windows.h>
+
